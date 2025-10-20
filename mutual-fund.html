@@ -247,7 +247,10 @@
 
                                                 <tr ng-repeat="fund in mutualFunds">
 
-                                                    <td style="color: #7424b5;">{{ fund.name }} ({{ fund.symbol }})</td>
+                                                    <td style="color: #7424b5; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+    {{ fund.name }} ({{ fund.symbol }})
+</td>
+
                                                     <td
                                                         ng‑style="{'color': vm.colorMap[vm.fund.riskProfile.toLowerCase()]}">
                                                         {{ fund.riskProfile }}
@@ -528,3 +531,4 @@
 
 
 </html>
+
