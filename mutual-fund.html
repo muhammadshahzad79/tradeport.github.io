@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="Forex, Stock Broker, Trading Investments">
+    <!-- Title -->
+    <title>Forex & Stock Broker Trading Investments</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.ico">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Flat Icon -->
+    <link rel="stylesheet" href="assets/fonts/flaticon_xtrade.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+
+<body>
+
+   <div id="preloader">
+        <div id="text">
+            <p class="active">T</p>
+            <p>T</p>
+            <p>r</p>
+            <p>a</p>
+            <p>d</p>
+            <p>e</p>
+            <p>P</p>
+            <p>o</p>
+            <p>r</p>
+            <p>t</p>
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!--==========================   Header Start  ==========================-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-main">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.svg" alt="logo" class="logo-img">
+                    </a>
+                    <div class="right-nav">
+                        <a href="login.html" class="btn btn-outline--base d-none d-sm-block">
+                            Log In <i class="flaticon-arrow-upper-right"></i>
+                        </a>
+                        <a href="" class="btn btn--base-two d-none d-sm-block">
+                            Contact Us <i class="flaticon-arrow-upper-right"></i>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="assets/images/logo/logo.svg" alt="logo" class="logo-img">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="d-flex d-lg-none gap-4 pt-3 justify-content-center">
+                            <a href="login.html" class="btn btn-outline--base d-sm-none">
+                                Log In <i class="flaticon-arrow-upper-right"></i>
+                            </a>
+                            <a href="contact.html" class="btn btn--base-two d-sm-none">
+                                Contact Us <i class="flaticon-arrow-upper-right"></i>
+                            </a>
+                        </div>
+                        <div class="offcanvas-body align-items-center">
+                            <ul class="navbar-nav justify-content-center flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="index.html" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Markets
+                                    </a>
+                                    <ul class="dropdown-menu fade-down">
+                                        <li><a class="dropdown-item" href="">Stocks</a></li>
+                                        <li><a class="dropdown-item" href="mutual-fund.html">Mutual Funds</a></li>
+                                        <li><a class="dropdown-item" href="">AMCs</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services-details.html">Services Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Trainings</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">ZAR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Pricing</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--==========================  Header End  ==========================-->
+        <main>
+            <!--==========================  Banner Section Start  ==========================-->
+            <div class="mt-5" style="margin-top: 86px !important;margin-bottom: 30px;">
+                <div class="row mt-5">
+                    <div class="col-12 mt-5">
+                        <div id="tradingview-ticker-tape mt-5">
+                            <div style="width: 100%; height: 44px;">
+                                <style>
+                                    .tradingview-widget-copyright {
+                                        font-size: 13px !important;
+                                        line-height: 32px !important;
+                                        text-align: center !important;
+                                        vertical-align: middle !important;
+                                        /* @mixin sf-pro-display-font; */
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+                                        color: #B2B5BE !important;
+                                    }
+
+                                    .tradingview-widget-copyright .blue-text {
+                                        color: #2962FF !important;
+                                    }
+
+                                    .tradingview-widget-copyright a {
+                                        text-decoration: none !important;
+                                        color: #B2B5BE !important;
+                                    }
+
+                                    .tradingview-widget-copyright a:visited {
+                                        color: #B2B5BE !important;
+                                    }
+
+                                    .tradingview-widget-copyright a:hover .blue-text {
+                                        color: #1E53E5 !important;
+                                    }
+
+                                    .tradingview-widget-copyright a:active .blue-text {
+                                        color: #1848CC !important;
+                                    }
+
+                                    .tradingview-widget-copyright a:visited .blue-text {
+                                        color: #2962FF !important;
+                                    }
+                                </style><iframe scrolling="no" allowtransparency="true" frameborder="0"
+                                    src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AGBPUSD%22%2C%22title%22%3A%22GBP%2FUSD%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AUSDJPY%22%2C%22title%22%3A%22USD%2FJPY%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AUSDCHF%22%2C%22title%22%3A%22USD%2FCHF%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AAUDUSD%22%2C%22title%22%3A%22AUD%2FUSD%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AUSDCAD%22%2C%22title%22%3A%22USD%2FCAD%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3ANZDUSD%22%2C%22title%22%3A%22NZ%24%2FUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A44%2C%22utm_source%22%3A%22%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22__NHTTP__%22%7D"
+                                    title="ticker tape TradingView widget" lang="en"
+                                    style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section class="trade-smartet-section bg--black py-100">
+                <div class="container position-relative">
+                    <div class="trade-smartet-shape d-none d-lg-block">
+                        <img src="assets/svg/twostar.svg" alt="star">
+                        <img src="assets/svg/balance-3.svg" alt="balance">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-8">
+                            <div class="section-content text-center">
+                                <h6 class="top-reveal">Funds</h6>
+                                <h2 class="top-reveal">Mutual Funds</h2>
+                                <p class="top-reveal">we believe great traders aren't born they’re
+                                    built through the
+                                    right tools,
+                                    education, and support. Our mission is simple: to empower every client with the
+                                    resources they
+                                    need to grow, succeed, and master.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-60">
+
+                        <div class="col-lg-12">
+                            <div class="bg--black-two trabe-info bottom-reveal">
+                                <div class="row">
+                                    <div class="col-sm-8">
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div
+                                            class="table-nav d-flex flex-wrap gap-4 align-items-center justify-content-between">
+
+                                            <form action="">
+                                                <input type="search" placeholder="Search the instruments">
+                                                <button type="submit"><i
+                                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mt-4" style="background: #212529;">
+                                    <div ng-app="myApp" ng-controller="myCtrl">
+
+                                        <h2 class="px-3 pt-4">Mutual Funds List</h2>
+
+                                        <div ng-if="loading">Loading data...</div>
+                                        <div ng-if="error">Failed to load data.</div>
+
+
+                                        <table class="table" style="padding: 16px;">
+                                            <thead style="background: #05dcc5;">
+                                                <tr>
+                                                    <th scope="col">Fund Name</th>
+                                                    <th scope="col">Risk Profile</th>
+                                                    <th scope="col">NAV</th>
+                                                    <th scope="col">AUM</th>
+                                                    <th scope="col">Change (1D)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr ng-repeat="fund in mutualFunds">
+
+                                                    <td style="color: #7424b5;">{{ fund.name }} ({{ fund.symbol }})</td>
+                                                    <td
+                                                        ng‑style="{'color': vm.colorMap[vm.fund.riskProfile.toLowerCase()]}">
+                                                        {{ fund.riskProfile }}
+                                                    </td>
+                                                    <td>{{ fund.nav }}</td>
+                                                    <td style="color: #119158;">{{fund.aum}}</td>
+                                                    <td style="color: #f30f0f;">{{ fund.changePercent1d }}%</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="call-to-action-section bg--black-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="call-action-box">
+                                <div class="call-shape">
+                                    <img src="assets/svg/twostar.svg" alt="star">
+                                </div>
+                                <div class="row row-gap-5">
+                                    <div class="col-lg-6 align-self-center order-1 order-lg-0">
+                                        <div class="call-text text-center text-lg-start">
+                                            <span class="text--base pb-3 right-reveal">Start Your Forex Journey
+                                                Today</span>
+                                            <h2 class="mb-4 right-reveal">Learn, Trade, And Grow With Trusted Tools And
+                                                Signals.</h2>
+                                            <a href="" class="btn btn--base-two right-reveal">
+                                                Register Now <i class="flaticon-arrow-upper-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 align-self-center">
+                                        <div class="call-img text-lg-end text-center scaleUp">
+                                            <img src="assets/images/call/call-img.png" alt="call"
+                                                class="img-fluid m-auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==========================  Call-to-action Section End  ==========================-->
+        </main>
+        <!-- ==================== Footer Start Here ==================== -->
+        <footer class="footer-area">
+            <div class="py-120">
+                <div class="container position-relative">
+                    <div class="footer-shape d-none d-lg-block">
+                        <img src="assets/svg/twostar.svg" alt="star">
+                        <img src="assets/svg/chart.svg" alt="chart">
+                    </div>
+                    <div class="row justify-content-center gy-5">
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="footer-item footer-logo-con pe-xl-5">
+                                <div class="footer-item__logo">
+                                    <a href=""> <img src="assets/images/logo/logo.svg" alt="logo"></a>
+                                </div>
+                                <p class="footer-item__desc">
+                                    we believe is the great traders aren't born they’re built through the
+                                    right
+                                    tools, education, and support. Our mission is simple.
+                                </p>
+                                <ul class="social-list">
+                                    <li class="social-list__item"><a href="" class="social-list__link flex-center"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="social-list__item"><a href="" class="social-list__link flex-center"> <i
+                                                class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="social-list__item"><a href="" class="social-list__link flex-center"> <i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="social-list__item"><a href="" class="social-list__link flex-center"> <i
+                                                class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="footer-widget__content ">
+                                <div class="footer-item">
+                                    <h5 class="footer-item__title">Company</h5>
+                                    <ul class="footer-menu">
+                                        <li class="footer-menu__item"> <a href="" class="footer-menu__link">
+                                                Stocks
+                                            </a> </li>
+                                        <li class="footer-menu__item"> <a href="mutual-fund.html"
+                                                class="footer-menu__link">
+                                                Mutual Funds
+                                            </a> </li>
+                                        <li class="footer-menu__item"> <a href="" class="footer-menu__link">
+                                                Pricing
+                                            </a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-item">
+                                    <h5 class="footer-item__title">Quick Link</h5>
+                                    <ul class="footer-menu">
+                                        <li class="footer-menu__item"> <a href="services-details.html"
+                                                class="footer-menu__link">
+                                                Services
+                                            </a> </li>
+                                        <li class="footer-menu__item"> <a href="" class="footer-menu__link">
+                                                Trainings
+                                            </a> </li>
+                                        <li class="footer-menu__item"> <a href="" class="footer-menu__link">
+                                                ZAR
+                                            </a> </li>
+
+                                    </ul>
+                                </div>
+                                <div class="footer-item">
+                                    <h5 class="footer-item__title">Contact Us</h5>
+                                    <ul class="footer-contact-menu">
+                                        <li class="footer-contact-menu__item">
+                                            <div class="footer-contact-menu__item-icon">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </div>
+                                            <div class="footer-contact-menu__item-content">
+                                                <p>New Street 243 ......</p>
+                                            </div>
+                                        </li>
+                                        <li class="footer-contact-menu__item">
+                                            <a href="" class="d-flex">
+                                                <div class="footer-contact-menu__item-icon">
+                                                    <i class="fa-solid fa-envelope"></i>
+                                                </div>
+                                                <div class="footer-contact-menu__item-content">
+                                                    <p><span class="__cf_email__"
+                                                            data-cfemail="dab3b4bcb5f4a2aea8bbbea39abdb7bbb3b6f4b9b5b7">[email&#160;protected]</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="footer-contact-menu__item">
+                                            <a href="tel:+8243944562" class="d-flex">
+                                                <div class="footer-contact-menu__item-icon">
+                                                    <i class="fa-solid fa-phone-volume"></i>
+                                                </div>
+                                                <div class="footer-contact-menu__item-content">
+                                                    <p>(+1) 824 394 4562</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top End-->
+
+            <!-- bottom Footer -->
+            <div class="bottom-footer py-4">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-md-5 order-1 order-md-0">
+                            <div class="bottom-footer-text text-white order-1 order-md-0 text-center text-md-start">
+                                <a href="">Trade Prtal</a>
+                                &copy; 2025. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <nav class="d-flex justify-content-md-end gap-4 row-gap-2 justify-content-center flex-wrap">
+                                <a href="" class="fs-16 text-white">Privacy Policy</a>
+                                <a href="" class="fs-16 text-white">Terms & Conditions</a>
+                                <a href="" class="fs-16 text-white">Contact Us</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ==================== Footer End Here ==================== -->
+    </div>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+
+    <!-- Jquery js -->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- gsap Js -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- Scroll Reveal Js -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- Swiper Bundle Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Fancy Box js -->
+    <script src="assets/js/fancybox.umd.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope, $http) {
+            const api = "https://beta-restapi.sarmaaya.pk/api/mutual-funds?sortBy=name&sortOrder=desc&page=1&limit=50";
+            const proxy = "https://api.allorigins.win/raw?url=";
+            const finalUrl = proxy + encodeURIComponent(api);
+
+            $scope.loading = true;
+            $scope.error = false;
+
+            $http.get(finalUrl)
+                .then(function (response) {
+
+                    if (response.data.response && response.data.response.data) {
+                        $scope.mutualFunds = response.data.response.data;
+                    } else if (response.data.data) {
+                        $scope.mutualFunds = response.data.data;
+                    } else {
+                        $scope.mutualFunds = [];
+                        console.warn("Data format not matched:", response.data);
+                    }
+
+
+                    $scope.loading = false;
+                })
+                .catch(function (error) {
+                    console.error("Error fetching data:", error);
+                    $scope.error = true;
+                    $scope.loading = false;
+                });
+
+            const vm = this;
+
+            vm.colors = ['green', 'orange', 'red', 'black'];  // array of possible colors
+
+            vm.fund = {
+                riskProfile: 'High',
+                colorIndex: 2   // for example use index 2 → 'red'
+            };
+
+            // Optionally a function to set the index based on riskProfile:
+            vm.setColorIndex = function () {
+                const r = (vm.fund.riskProfile || '').toLowerCase();
+                if (r === 'low') vm.fund.colorIndex = 0;
+                else if (r === 'medium') vm.fund.colorIndex = 1;
+                else if (r === 'high') vm.fund.colorIndex = 2;
+                else vm.fund.colorIndex = 3;
+            };
+
+            // Call once to set initial colorIndex
+            vm.setColorIndex();
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
