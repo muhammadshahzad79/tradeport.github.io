@@ -181,7 +181,6 @@
             </div>
 
 
-
             <section class="trade-smartet-section bg--black py-100">
                 <div class="container position-relative">
                     <div class="trade-smartet-shape d-none d-lg-block">
@@ -232,36 +231,34 @@
                                         <div ng-if="loading">Loading data...</div>
                                         <div ng-if="error">Failed to load data.</div>
 
+<div style="overflow-x: auto; width: 100%;">
+    <table class="table" style="width: 100%; min-width: 600px; border-collapse: collapse; padding: 16px;">
+        <thead style="background: #05dcc5;">
+            <tr>
+                <th scope="col" style="text-align: left; padding: 8px;">Fund Name</th>
+                <th scope="col" style="text-align: left; padding: 8px;">Risk Profile</th>
+                <th scope="col" style="text-align: left; padding: 8px;">NAV</th>
+                <th scope="col" style="text-align: left; padding: 8px;">AUM</th>
+                <th scope="col" style="text-align: left; padding: 8px;">Change (1D)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="fund in mutualFunds">
+                <td style="color: #7424b5; padding: 8px; word-break: break-word; white-space: normal; max-width: 200px;">
+                    {{ fund.name }} ({{ fund.symbol }})
+                </td>
+                <td style="padding: 8px;" ng-style="{'color': vm.colorMap[vm.fund.riskProfile.toLowerCase()]}">
+                    {{ fund.riskProfile }}
+                </td>
+                <td style="padding: 8px;">{{ fund.nav }}</td>
+                <td style="color: #119158; padding: 8px;">{{fund.aum}}</td>
+                <td style="color: #f30f0f; padding: 8px;">{{ fund.changePercent1d }}%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-                                        <table class="table table-responsive" style="padding: 16px;">
-                                            <thead style="background: #05dcc5;">
-                                                <tr>
-                                                    <th scope="col">Fund Name</th>
-                                                    <th scope="col">Risk Profile</th>
-                                                    <th scope="col">NAV</th>
-                                                    <th scope="col">AUM</th>
-                                                    <th scope="col">Change (1D)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <tr ng-repeat="fund in mutualFunds">
-
-                                                    <td style="color: #7424b5; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-    {{ fund.name }} ({{ fund.symbol }})
-</td>
-
-                                                    <td
-                                                        ng‑style="{'color': vm.colorMap[vm.fund.riskProfile.toLowerCase()]}">
-                                                        {{ fund.riskProfile }}
-                                                    </td>
-                                                    <td>{{ fund.nav }}</td>
-                                                    <td style="color: #119158;">{{fund.aum}}</td>
-                                                    <td style="color: #f30f0f;">{{ fund.changePercent1d }}%</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
+                                        
                                     </div>
 
                                 </div>
@@ -531,4 +528,5 @@
 
 
 </html>
+
 
